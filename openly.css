@@ -1,0 +1,758 @@
+@media only screen and (max-width: 1000px) {
+    .title {
+      font-size: 60px;
+    }
+    
+    .openlyhome{
+        width: 20vw;
+    }
+
+    #openly a{
+        color: rgb(184, 164, 127) !important;
+    }
+
+    #thro-our-knuckles{
+        font-size: 2.9em;
+    }
+
+}
+
+body{
+    position: relative;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    background-color:  black;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    text-shadow: 0px 2px 3px rgb(49 92 183);
+    color: rgb(183, 156, 49, .5) !important;
+}
+
+#root{
+    z-index: 10;
+    position: relative;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    width: 95vw;
+    margin-top: 2%;
+    padding-top: 1%;
+    box-sizing: border-box;
+    align-self: space-between;
+}
+
+
+
+#bg{
+    position: fixed;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+    transform: translate(-0%, -27%);
+}
+
+
+/*~~~~~~~~~~~~~~~openly~~~~~~~~~~~~~~~*/
+
+#openly-main{
+    mix-blend-mode: soft-light;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+#openly-main img{
+    max-width: 600px;
+    max-height: 500px;
+
+    width: 60vw;
+    height: 60vw;
+}
+
+
+.openly{
+    position: relative;
+    z-index: 100;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#openlyBody{
+    width: 100%;
+    animation-name: bgColor;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    mix-blend-mode: difference;
+}
+
+@keyframes bgColor {
+    0% {background-color: rgb(184, 184, 165)}
+    25% {background-color: rgb(138, 152, 172)}
+    50% {background-color: rgb(160, 154, 106)}
+    75% {background-color: rgb(185, 211, 246)}
+    90% {background-color: rgb(4, 6, 17)}
+    100% {background-color: rgb(157, 157, 140)}
+}
+
+#centerPoem{
+    position: absolute;
+    width: 70vw;
+    left: 15vw;
+    top: 10vh;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#enter-openly{
+    color: rgb(18, 10, 48);
+    background-color: wheat;
+    padding: 1%;
+}
+
+#enter-openly button{
+    text-decoration: none;
+}
+
+#centerPoem p{
+    animation-name: poemOpacity;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    text-shadow: 0px 2px 3px rgb(49 92 183);
+}
+
+#centerPoem p:nth-child(2) {
+    animation-delay: 3s;
+}
+
+#centerPoem p:nth-child(3) {
+    animation-delay: 6s;
+}
+#centerPoem p:nth-child(4) {
+    animation-delay: 9s;
+}
+#centerPoem p:nth-child(5) {
+    animation-delay: 12s;
+}
+#centerPoem p:nth-child(6) {
+    animation-delay: 15s;
+}
+
+#centerPoem p:nth-child(7) {
+    animation-delay: 18s;
+}
+
+@keyframes poemOpacity {
+    0% {color: rgb(85, 84, 71);}
+    25% {color: rgb(100, 139, 168);}
+    50% {color: rgb(173, 174, 211);}
+    75% {color: rgb(160, 157, 125);}
+    100% {color: rgb(85, 84, 71);}
+}
+
+#openly-list a{
+    color: rgb(214, 214, 12) !important;
+}
+
+#openly-list{
+    margin-left: 30%;
+}
+
+#openly-list a:hover{
+    opacity: 1.0 !important;
+    color: rgb(18, 10, 48);
+    background-color: rgb(255, 0, 221);
+}
+
+
+#openlyContainer{
+    height: 100%;
+    position: relative;
+    left: 0;
+    top:10vh;
+    width: 100%;
+    mix-blend-mode: exclusion;
+
+}
+
+/*~~~~~~~~~~~~~~~all~~~~~~~~~~~~~~~*/
+
+
+.openlyhome{
+    position: absolute;
+    top: 3vh;
+    left: 3vw;
+    text-decoration: none;
+    font-size: 3em;
+    z-index: 100;
+    color: rgb(183, 156, 49, .5) !important;
+}
+
+.openlyhome:hover{
+    opacity: 1;
+}
+
+.bgVideo{
+    height: 100%;
+    overflow-x: hidden;
+    width: auto;
+    min-width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    opacity: 0.9;
+}
+
+#openlyBody{
+    padding: 2%;
+}
+
+.poemContainer{
+    color: white;
+    width: 100%;
+    z-index: 1;
+    top:0;
+    left:0;
+    height: fit-content;
+    min-height: 100vh;;
+}
+
+
+.title{
+    color: red !important;
+    position: relative;
+    float: right;
+    font-weight: 400;
+    font-size: 2.5rem;
+    z-index: 100;
+    padding-right: 2vw;
+}
+
+#toggle-vid{
+    z-index: 1;
+}
+
+/*~~~~~~~~~~~~~~~opening~~~~~~~~~~~~~~~*/
+
+
+#lately-audio{
+    z-index: 100;
+    height: 50px;
+    width: 95%;
+}
+
+#lately-poem{
+    padding-top: 10%;
+    padding-left: 5%;
+    width: 60%;
+    min-width: 500px;
+    background-color: wheat;
+    color: red;
+    text-shadow: -1px -1px 3px rgb(120, 120, 176);
+    box-shadow: 0px 0px 50px wheat ;
+}
+
+.opening-portal{
+    position: fixed;
+    background-color: black;
+}
+
+#opening-block2{
+    width: 50vw;
+    height: 40vh;
+    top: 5vh;
+    left: 5vw;
+}
+#opening-block{
+    width: 60vw;
+    height: 30vh;
+    top: 50vh;
+    left: 5vw;
+}
+#opening-block3{
+    width: 20vw;
+    height: 70vh;
+    right: 0;
+    padding-right: 5%;
+    top: 15vh;
+}
+
+#honestly{
+    font-size: 1.8em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;   
+    padding: 2%;
+}
+
+#opening-right{
+    z-index: 100;
+    width: 20%;
+    font-size: 0.6em;
+}
+
+#portal-opening{
+    position: absolute;
+    width: 90vw;
+    left: 0vw;
+    top: 0vh;
+    height: 80vh;
+}
+
+#opening{
+    padding-right: 5%;
+}
+
+/*~~~~~~~~~~~~~~~perpendicular~~~~~~~~~~~~~~~*/
+
+#perpendicular-audio{
+    z-index: 100;
+    height: 50px;
+    position: absolute;
+    opacity: 0.5;
+    left: 20%;
+    bottom: 10%;
+}
+#perpendicular-imgs img:nth-child(1){
+    width: 20%;
+    min-width: 300px;
+    top: 20vh;
+    left: 30%;
+}
+#perpendicular-imgs img:nth-child(2){
+    width: 20%;
+    right: 10%;
+    top: 40%;
+}
+#perpendicular-imgs img:nth-child(3){
+    width: 10%;
+    right: 5%;
+    bottom: 1vh;
+    min-width: 200px;
+}
+
+#perpendicularPoem{
+    color: blue;
+    text-shadow: 0 0 5px blue;
+    font-weight: 200;
+    font-size: 1.8em;
+    width: 35%;
+    z-index: 100;
+    position: sticky;
+    left: 65%;
+    top: 20%;
+    height: 15vh;
+}
+
+#perpendicular{
+    background-image: url("media/fence.jpg");
+    height: 70vh;
+    position: relative;
+    margin-top: 10%;
+    padding: 5%;
+    filter: brightness(1.15);
+    mix-blend-mode: darken;
+}
+#perpendicular img{
+    position: absolute;
+}
+
+/*~~~~~~~~~~~~~~~with every pore of my skin~~~~~~~~~~~~~~~*/
+
+#everypore{
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    height: fit-content;
+    width:100vw;
+    filter:contrast(1.5);
+    overflow: visible;
+    position: relative;
+    mix-blend-mode: lighten;
+}
+
+
+#everyporeofskin{
+    padding-left: 10%;
+    height: 60vh;
+    width: 60%;
+    padding-top: 10%;;
+}
+#everyporeofskin2{
+    width: 60%;
+    padding-top: 10%;;
+}
+
+#everyporeofskin p, #everyporeofskin2 p{
+    color: rgba(221, 216, 194, 0.65);
+    font-size: 1.1em;
+    font-weight: 100;
+    line-height: 0.75em;
+}
+
+#pore2{
+    position: absolute;
+    width: 60%;
+    mix-blend-mode: lighten;
+    left: 10%;
+    top: 25%;
+}
+#opening-block5{
+    position: fixed;
+    width: 70vw;
+    left: 0;
+    top: 20vh;;
+    mix-blend-mode: lighten;
+}
+
+#opening-block5 img{
+    width: 100%;
+}
+
+#pore1{
+    position: sticky;
+    width: 80%;
+    left: 0;
+    top: 0;
+    mix-blend-mode: lighten;
+}
+#pore1 img, #pore2 img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*~~~~~~~~~~~~~~~through our knuckles~~~~~~~~~~~~~~~*/
+
+#thro-our-knuckles{
+    height: fit-content;
+    padding: 15% 25% 5% 25%;
+    position: relative;
+    mix-blend-mode: color-burn;
+    text-align: center;
+}
+
+#knuckles img{
+    width: 100%; 
+}
+
+#opening-block4{
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+
+#opening-block4 img{
+    width: 30vw;
+    height: 30vw;
+    margin-left: 35vw;
+}
+
+
+/*~~~~~~~~~~~~~~~pothole~~~~~~~~~~~~~~~*/
+
+#potholes{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+    padding: 1%;
+    font-size: 1.5em;
+    font-weight: 800;
+    line-height: 10%;
+    height: fit-content;
+    overflow: visible;
+    color: rgba(107, 0, 0, 0.589);
+    background-image: url("media/swamp.png");
+    mix-blend-mode: screen;
+}
+
+#potholes .title{
+    color: rgb(75, 0, 0) !important;
+}
+#potholes p{
+    width: 80%;
+}
+
+.pothole{
+    clear: both;
+    text-align: center;
+    padding: 5% 0;
+}
+
+/*~~~~~~~~~~~~~~~sunspots and sinkholes~~~~~~~~~~~~~~~*/
+
+#sunspots{
+    overflow: scroll;
+    height: 80vh;
+    mix-blend-mode: lighten;
+    padding: 3%;
+}
+
+#sunspot1{
+    font-size: 0.8em;
+    text-shadow: rgba(207, 225, 236, 0.856) 10px 0px 10px;
+    color: rgba(207, 225, 236, 0.856);
+}
+
+#sunspot2{
+    text-shadow:rgba(253, 229, 196, 0.856) 10px 0px 10px;
+    color: rgba(248, 232, 210, 0.856);
+    margin-left: 20%;
+    width: 80%;
+    font-size: 1.5em;
+}
+
+#softspot2{
+    width: 60vw;
+    max-width: 700px;
+    position: relative;
+    height: fit-content;
+}
+
+#softspot2 div{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    text-align: right;
+    overflow: visible;
+    font-size: 2.2em;
+    color: black;
+}
+
+#softspot2 img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+
+#softspot{
+    position: sticky;
+    left: 5vw;
+    top: 5%;
+}
+
+#softspot img{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+#sunspot2 video{
+    filter: brightness(0.8);
+    opacity: 0.6;
+}
+
+#grassfield{
+    width: 180px;
+    height: auto;
+    opacity: 0.8;
+    overflow: hidden;
+    margin-top: 150px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+    mix-blend-mode:multiply;
+}
+
+/*~~~~~~~~~~~~~~~your arms were the windows~~~~~~~~~~~~~~~*/
+
+#yourarmswere .title{
+    color:rgba(110, 0, 0, 0.39) !important;
+}
+#yourarmswere{
+    width: 100vw;
+    font-weight: 100;
+    overflow: visible;
+    text-shadow: 5px 0px 5px rgb(175, 175, 175);
+}
+#arms{
+    margin-top: 5vh;
+    width: 100vw;
+    height: fit-content;
+    background-image: url("media/rupture.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#arms img{
+    mix-blend-mode: color-dodge;
+    height: auto;
+    width: 100%;
+    margin-top: 30vh;
+}
+
+#window img{
+    width: 80%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+#window2 img{
+    width: 50%;
+    height: auto;
+    filter: invert(0.2)
+}
+
+#window img:nth-child(1){
+    margin-left: 20%;
+}
+#window img:nth-child(2){
+    margin-left: 15%;
+}
+#window{
+    width: 20%;
+    top: 20%;
+    mix-blend-mode: lighten;
+}
+
+#window2{
+    z-index: 1;
+    position: absolute;
+    left: 25%;
+    bottom: 5%;
+    mix-blend-mode: lighten;
+}
+/*~~~~~~~~~~~~~~~soft spiral~~~~~~~~~~~~~~~*/
+#soft-spiral{
+    width: 70%;
+    padding: 2%;
+    color: black;
+}
+
+#softspiral .title{
+    color:rgb(18, 10, 48) !important;
+}
+
+#spirals{
+    width: 100%;
+}
+#spiral1, #spiral2{
+width: 40vw;
+position: absolute;
+padding: 0;
+margin-left: 30vw;
+}
+#spiral1{
+    bottom: -5%;
+}
+#spiral2 img, #spiral1 img{
+    margin-top: 15%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+/*~~~~~~~~~~~~~~~inside the light~~~~~~~~~~~~~~~*/
+#insidethelight{
+    text-shadow: yellowgreen 1px 0 15px;
+    font-size: 1.1em;
+    mix-blend-mode: color-dodge;
+    width: 70vw;
+    padding: 0 15%;;
+}
+
+#insidethelight7{
+    background-color: yellowgreen;
+    color: rgba(0, 0, 0, 0.308);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.719);
+    padding: 15%;
+    opacity: 0.6;
+    mix-blend-mode: color-dodge;
+}
+
+#insidethelight8{
+    width: 100%;
+    mix-blend-mode: overlay;
+    position: absolute;
+    top: 85%;
+}
+#insidethelight9{
+    position: relative;
+    overflow: visible;
+}
+
+.light{
+    width: 100%;
+}
+#insidethelight2, #insidethelight3, #insidethelight4{
+    padding-left: 2%;
+}
+
+.light img{
+    width:  100%;;
+}
+/*~~~~~~~~~~~~~~~reopening~~~~~~~~~~~~~~~*/
+
+
+
+#reopening .title{
+    padding: 2%;
+    width: 70%;
+    opacity: 0.6;
+    padding: 2%;
+}
+
+#reopening{
+    margin-top: 50%;
+    position: relative;
+}
+
+
+.reopening-poem{
+    position: relative;
+    z-index: 100;
+}
+
+#reopening-poem1{
+    top: 20%;
+    left: 7%;
+    font-size: 1em;
+    color: rgba(160, 141, 101, 0.876);
+    font-weight: 100;
+    text-shadow: rgba(255, 166, 0, 0.596) 45px 10px 20px;
+}
+
+#reopening-poem2{
+    top: 50%;
+    left: 40%;
+    font-size: 2.8em;
+    color: rgba(232, 255, 168, 0);
+    text-shadow: rgba(154, 199, 32, 0.534) 115px 2px 5px;
+}
+
+#reopening-poem3{
+    top: 80%;
+    left: 3%;
+    padding:0;
+    margin: 0;
+    font-size: 4.25em;
+    color: rgba(232, 255, 168, 0);
+    text-shadow: rgba(249, 250, 250, 0.315) 115px 2px 5px;
+}
+
+.reopening-bg{
+    position: absolute;
+    width: 90vw;
+    height: 90vw;
+    top: 0;
+}
+
+#swamp{
+    position: fixed;
+    top: 0;
+    left:0;
+    opacity: 0.6;
+    height: 100vh;
+}
