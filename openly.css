@@ -17,13 +17,13 @@
 
 }
 
+
 body{
     position: relative;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    background-color:  black;
+    background-color:  transparent;
     margin: 0;
     font-weight: 400;
-    font-size: 18px;
     text-shadow: 0px 2px 3px rgb(49 92 183);
     color: rgb(183, 156, 49, .5) !important;
 }
@@ -61,19 +61,17 @@ body{
 
 #openly-main{
     mix-blend-mode: soft-light;
-    width: 100%;
-    position: relative;
+    width: 50vw;
+    color: red;
+    font-weight: 800;
+    flex-wrap: wrap;
     display: flex;
-    margin-left: 10%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
-#openly-main img{
-    max-width: 600px;
-    max-height: 500px;
-
-    width: 60vw;
-    height: 60vw;
+#openly-main p{
+    padding: 0% 2%;
+    font-size: 1.3em;;
 }
 
 
@@ -87,11 +85,13 @@ body{
 }
 
 #openlyBody{
+    position: relative;
     width: 100%;
+    top: 3vh;
     animation-name: bgColor;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-    mix-blend-mode: difference;
+    mix-blend-mode: lighten;
 }
 
 @keyframes bgColor {
@@ -104,30 +104,81 @@ body{
 }
 
 #centerPoem{
+    margin-top: 10vh;
     position: absolute;
-    width: 70vw;
-    left: 15vw;
-    top: 10vh;
-    text-align: center;
-    font-size: 1.5em;
+    width: 100%;
+    padding: 2%;
+    font-size: 3em;
+    font-weight: 200;;
 }
+
 
 #enter-openly{
-    color: rgb(18, 10, 48);
-    background-color: wheat;
-    padding: 1%;
+    box-sizing: border-box;
+    background-image: url("media/candle3.png");
+    
+    background-position-x: 15%;
+    background-position-y: 10%;
+    opacity: 0.4;
+    background-blend-mode: soft-light;
+    box-shadow: 0px 0px 20px #b1b1b1 inset;
+    color: white !important;
+    border-radius: 100px 100px 100px 100px;
+    font-weight: 100;
+    font-size: 1.8em;
+    text-decoration: none;
+    height: 200px;
+    width: 200px;
+    padding-top: 85px;
+    text-align: center;
+
 }
 
-#enter-openly button{
-    text-decoration: none;
+
+#header1{
+    display: flex;
+    background-color: black;
+    color: white;
+    z-index: 100;
+    top: 0;
+    height: 4vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    left: 0;
+}
+
+#openly-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#header2{
+    height: 4vh;
+}
+
+.header2{
+    box-sizing: border-box;
+    position: relative;
+    top:0%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 3% 5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 #centerPoem p{
-    animation-name: poemOpacity;
+    /* animation-name: poemOpacity; */
     animation-duration: 25s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    text-shadow: 0px 2px 3px rgb(49 92 183);
+    text-shadow: 0px 2px 3px rgb(165, 172, 179);
+    color: rgba(165, 172, 179, 0.205) !important;
 }
 
 #centerPoem p:nth-child(2) {
@@ -152,11 +203,11 @@ body{
 }
 
 @keyframes poemOpacity {
-    0% {color: rgb(85, 84, 71);}
-    25% {color: rgb(100, 139, 168);}
-    50% {color: rgb(173, 174, 211);}
-    75% {color: rgb(160, 157, 125);}
-    100% {color: rgb(85, 84, 71);}
+    0% {opacity: 0;}
+    30% {opacity: 0.8;}
+    50% {opacity: 1;}
+    70% {opacity: 0.8;}
+    100% {opacity: 0;}
 }
 
 #openly-list a{
@@ -178,9 +229,9 @@ body{
     height: 100%;
     position: relative;
     left: 0;
-    top:10vh;
+    top:0vh;
     width: 100%;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
 
 }
 
@@ -188,9 +239,6 @@ body{
 
 
 .openlyhome{
-    position: absolute;
-    top: 3vh;
-    left: 3vw;
     text-decoration: none;
     font-size: 3em;
     z-index: 100;
@@ -201,12 +249,35 @@ body{
     opacity: 1;
 }
 
-.bgVideo{
-    height: 100%;
+#birds{
+    filter: contrast(1.2); 
+}
+
+
+/* .openlyVid{
+    opacity: 0.85;
+} */
+
+#openly-intro{
+    z-index: 100;
+    width: 30vw;
+    min-width: 300px;
+    background-image: url("media/openly.png");
+    height: auto;
+    position: fixed;
+    top: 10vh;
+    right:5vw;;
+    mix-blend-mode: soft-light;
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.541) inset;
+
+}
+
+.bgVideo, .openlyVid{
+    /* height: 100%; */
     overflow-x: hidden;
     width: auto;
-    min-width: 100%;
-    min-height: 100vh;
+    min-width: 100vw;
+    min-height: 110vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -216,8 +287,13 @@ body{
     opacity: 0.9;
 }
 
-#openlyBody{
-    padding: 2%;
+#me{
+    width: 30%;
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
 }
 
 .poemContainer{
@@ -259,10 +335,8 @@ body{
     padding-left: 5%;
     width: 60%;
     min-width: 500px;
-    background-color: wheat;
     color: red;
     text-shadow: -1px -1px 3px rgb(120, 120, 176);
-    box-shadow: 0px 0px 50px wheat ;
 }
 
 .opening-portal{
@@ -302,6 +376,7 @@ body{
     z-index: 100;
     width: 20%;
     font-size: 0.6em;
+    margin-top: 20%;
 }
 
 #portal-opening{
@@ -345,16 +420,21 @@ body{
 }
 
 #perpendicularPoem{
-    color: blue;
+    color: #b7b7ff;
     text-shadow: 0 0 5px blue;
     font-weight: 200;
-    font-size: 1.8em;
+    font-size: 2.5em;
     width: 35%;
     z-index: 100;
-    position: sticky;
-    left: 65%;
-    top: 20%;
+    position: absolute;
+    right: 3%;
+    top: 18%;
     height: 15vh;
+    text-align: end;
+}
+
+#perpendicular video{
+    mix-blend-mode: soft-light;
 }
 
 #perpendicular{
@@ -364,10 +444,11 @@ body{
     margin-top: 10%;
     padding: 5%;
     filter: brightness(1.15);
-    mix-blend-mode: darken;
+    mix-blend-mode: lighten;
 }
 #perpendicular img{
     position: absolute;
+    z-index: 100;
 }
 
 /*~~~~~~~~~~~~~~~with every pore of my skin~~~~~~~~~~~~~~~*/
@@ -384,14 +465,16 @@ body{
 
 
 #everyporeofskin{
+    font-size: 1.3em;
     padding-left: 10%;
-    height: 60vh;
+    height: 25vh;   
     width: 60%;
     padding-top: 10%;;
 }
 #everyporeofskin2{
     width: 60%;
-    padding-top: 10%;;
+    padding-bottom: 10%;
+    padding-left: 5%;
 }
 
 #everyporeofskin p, #everyporeofskin2 p{
@@ -412,8 +495,9 @@ body{
     position: fixed;
     width: 70vw;
     left: 0;
+    opacity: 0.4;
     top: 20vh;;
-    mix-blend-mode: lighten;
+    mix-blend-mode: exclusion;
 }
 
 #opening-block5 img{
@@ -473,12 +557,12 @@ body{
     height: fit-content;
     overflow: visible;
     color: rgba(107, 0, 0, 0.589);
-    background-image: url("media/swamp.png");
-    mix-blend-mode: screen;
+    background-size: cover;
+    mix-blend-mode:darken;
 }
 
 #potholes .title{
-    color: rgb(75, 0, 0) !important;
+    color: rgb(171, 7, 7) !important;
 }
 #potholes p{
     width: 80%;
@@ -486,7 +570,7 @@ body{
 
 .pothole{
     clear: both;
-    text-align: center;
+    text-align: right;
     padding: 5% 0;
 }
 
@@ -497,20 +581,26 @@ body{
     height: 80vh;
     mix-blend-mode: lighten;
     padding: 3%;
+    font-size: 2.2em;
+
 }
 
 #sunspot1{
-    font-size: 0.8em;
-    text-shadow: rgba(207, 225, 236, 0.856) 10px 0px 10px;
-    color: rgba(207, 225, 236, 0.856);
+    position: relative;
+    background-color: #83557d;
+    color: rgba(196, 200, 203, 0.856);
+    padding: 1.5%;
 }
 
 #sunspot2{
     text-shadow:rgba(253, 229, 196, 0.856) 10px 0px 10px;
-    color: rgba(248, 232, 210, 0.856);
-    margin-left: 20%;
-    width: 80%;
-    font-size: 1.5em;
+    color: rgba(248, 232, 210, 0.5);
+    width: 100%;
+    opacity: 0.5;
+    padding: 0 2%;
+    font-size: 3.5em;
+    position: relative;
+
 }
 
 #softspot2{
@@ -537,33 +627,27 @@ body{
 }
 
 #softspot{
-    position: sticky;
-    left: 5vw;
-    top: 5%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 #softspot img{
-    width: 100%;
+    width: 30%;
+    right: 0;
     height: auto;
     opacity: 0.6;
 }
 
-#sunspot2 video{
-    filter: brightness(0.8);
-    opacity: 0.6;
-}
-
+/* 
 #grassfield{
-    width: 180px;
+    width: 20%;
     height: auto;
     opacity: 0.8;
     overflow: hidden;
-    margin-top: 150px;
-    position: absolute;
-    top: 100px;
     z-index: 1;
-    mix-blend-mode:multiply;
-}
+} */
 
 /*~~~~~~~~~~~~~~~your arms were the windows~~~~~~~~~~~~~~~*/
 
@@ -753,6 +837,7 @@ margin-left: 30vw;
     position: fixed;
     top: 0;
     left:0;
-    opacity: 0.6;
+    opacity: 0.4;
     height: 100vh;
+    width: 100vw;
 }
