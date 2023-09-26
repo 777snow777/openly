@@ -24,12 +24,13 @@ body, #main-body{
 }
 
 #main-body{
+    overflow: scroll;
     display: none;
 }
 
 #bodyBg{
     animation-name: bgColor;
-    animation-duration: 100s;
+    animation-duration: 120s;
     animation-iteration-count: infinite;
     
 }
@@ -68,10 +69,13 @@ body, #main-body{
 /*~~~~~~~~~~~~~~~openly~~~~~~~~~~~~~~~*/
 
 #openly-main{
-    mix-blend-mode: soft-light;
-    width: 50vw;
-    color: red;
+    mix-blend-mode: darken;
+    width: 94%;
+    color: #b10000;;
+    font-size: 2rem;
+    padding: 3%;
     font-weight: 800;
+    text-align: end;
     flex-wrap: wrap;
     display: flex;
     justify-content: flex-end;
@@ -95,16 +99,15 @@ body, #main-body{
 #openly-body{
     position: relative;
     width: 100%;
-    top: 3vh;
+    top: 0vh;
     mix-blend-mode: color-burn;
-    background-color: rgb(184, 184, 165);
     min-height:fit-content;
 }
 
 @keyframes bgColor {
-    0% {background-color: rgb(253, 217, 151)}
+    0% {background-color: rgb(231, 208, 167)}
     50% {background-color: rgb(208, 213, 218)}
-    100% {background-color: rgb(250, 216, 152)}
+    100% {background-color: rgb(231, 208, 167)}
 }
 
 #centerPoem{
@@ -238,15 +241,16 @@ body, #main-body{
     left: 0;
     top:0vh;
     width: 100%;
-    mix-blend-mode: difference;
+    mix-blend-mode: darken;
+    background-color: wheat;
 
 }
 
 /*~~~~~~~~~~~~~~~all~~~~~~~~~~~~~~~*/
 
 
-#birds{
-    filter: contrast(1.2); 
+#birds-vid{
+    width: 90vw;
 }
 
 
@@ -265,7 +269,7 @@ body, #main-body{
 }
 
 .bgVideo{
-    /* height: 100%; */
+    height: 100%;
     overflow-x: hidden;
     width: auto;
     min-width: 100vw;
@@ -286,6 +290,9 @@ body, #main-body{
     position: fixed;
     right: 0;
     top: 5vh;
+}
+#openly-vid{
+    filter: contrast(1.35) brightness(1.1);
 }
 
 #me{
@@ -331,27 +338,28 @@ body, #main-body{
     padding-top: 10%;
     padding-left: 5%;
     width: 60%;
+    font-weight: 600;
     min-width: 500px;
-    color: red;
-    text-shadow: -1px -1px 3px rgb(120, 120, 176);
+    font-size: 1.3em;
+    text-shadow: -1px -1px 3px rgb(120, 122, 176);
 }
 
 .opening-portal{
     position: fixed;
-    background-color: black;
+    mix-blend-mode: multiply;
 }
 
 #opening-block2{
     width: 50vw;
     height: 40vh;
     top: 5vh;
-    left: 5vw;
+    left: 0vw;
 }
 #opening-block{
     width: 60vw;
     height: 30vh;
     top: 50vh;
-    left: 5vw;
+    left: 0vw;
 }
 #opening-block3{
     width: 20vw;
@@ -367,12 +375,14 @@ body, #main-body{
     display: flex;
     justify-content: space-between;   
     padding: 2%;
+    color: #972525a6;
+
 }
 
 #opening-right{
     z-index: 100;
     width: 20%;
-    font-size: 0.6em;
+    font-size: 0.8em;
     margin-top: 20%;
 }
 
@@ -566,6 +576,7 @@ body, #main-body{
 
 #openly-poem .row1{
     display: flex;
+    font-size: 1.1em;;
 }
 
 #potholes .title{
@@ -577,12 +588,11 @@ body, #main-body{
 
 .poem{
     color: rgb(171, 7, 7) !important;
-    padding: 1%;
     font-size: 1.25em;
     font-weight: 800;
 }
 
-.pothole, .poem{
+.pothole{
     clear: both;
     text-align: right;
     padding: 5% 0;
