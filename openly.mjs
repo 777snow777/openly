@@ -12,10 +12,40 @@ function toggleVideo(e) {
         }    }
 }
 
-window.onload= (ev)=>{
-   
-    let bg = document.getElementById("toggle-vid")
-    if (bg != null){
-        bg.addEventListener('click', (e)=>toggleVideo(e))
+function createGrid(p) {
+    for (let i = 0; i < 10; i ++){
+        let row = document.createElement("div")
+        row.classList.add("grid-row")
+        if (i % 2 == 0){
+            row.addEventListener("mouseenter", (e)=>{
+                document.getElementById("birds").pause()
+            });
+        }else{
+            row.addEventListener("mouseenter", (e)=>{
+                document.getElementById("birds").play()
+            });
+        }
+        for (let j = 0; j < 10; j ++){
+            let txtCell = document.createElement("div")
+            txtCell.classList.add("grid-cell")
+            txtCell.style.width = "10vw"
+            row.appendChild(txtCell)
+        }
+        row.style.height = "10vh";
+        p.appendChild(row)
     }
+}
+
+window.onload= (ev)=>{
+    // let gridspace = document.getElementById("openlyBody")
+    // if (gridspace != null){
+    //     createGrid(gridspace)
+    // }
+    let enter = document.getElementById("enter-openly")
+    enter.addEventListener("click", (e)=>{
+        document.getElementById("openly-body").style.display = "none"
+        document.getElementById("openly-poem").style.display = "none"
+        document.getElementById("main-body").style.display = "block"
+    })
+
 }

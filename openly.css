@@ -2,10 +2,6 @@
     .title {
       font-size: 60px;
     }
-    
-    .openlyhome{
-        width: 20vw;
-    }
 
     #openly a{
         color: rgb(184, 164, 127) !important;
@@ -18,15 +14,27 @@
 }
 
 
-body{
+body, #main-body{
     position: relative;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
-    background-color:  transparent;
     margin: 0;
     font-weight: 400;
     text-shadow: 0px 2px 3px rgb(49 92 183);
     color: rgb(183, 156, 49, .5) !important;
 }
+
+#main-body{
+    display: none;
+}
+
+#bodyBg{
+    animation-name: bgColor;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    
+}
+
+
 
 #root{
     z-index: 10;
@@ -84,23 +92,19 @@ body{
     overflow: hidden;
 }
 
-#openlyBody{
+#openly-body{
     position: relative;
     width: 100%;
     top: 3vh;
-    animation-name: bgColor;
-    animation-duration: 100s;
-    animation-iteration-count: infinite;
-    mix-blend-mode: lighten;
+    mix-blend-mode: color-burn;
+    background-color: rgb(184, 184, 165);
+    min-height:fit-content;
 }
 
 @keyframes bgColor {
-    0% {background-color: rgb(184, 184, 165)}
-    25% {background-color: rgb(138, 152, 172)}
-    50% {background-color: rgb(160, 154, 106)}
-    75% {background-color: rgb(185, 211, 246)}
-    90% {background-color: rgb(4, 6, 17)}
-    100% {background-color: rgb(157, 157, 140)}
+    0% {background-color: rgb(253, 217, 151)}
+    50% {background-color: rgb(208, 213, 218)}
+    100% {background-color: rgb(250, 216, 152)}
 }
 
 #centerPoem{
@@ -114,30 +118,26 @@ body{
 
 
 #enter-openly{
+    border: none;
+    background-color: transparent;
     box-sizing: border-box;
-    background-image: url("media/candle3.png");
-    
-    background-position-x: 15%;
-    background-position-y: 10%;
-    opacity: 0.25;
     background-blend-mode: soft-light;
-    box-shadow: 0px 0px 20px #b1b1b1 inset;
-    color: white !important;
-    border-radius: 100px 100px 100px 100px;
-    font-weight: 100;
-    font-size: 1.8em;
-    text-decoration: none;
-    height: 200px;
-    width: 200px;
-    padding-top: 85px;
+    font-weight: 600;
+    font-size: 3em;
+    text-decoration: none !important;
     text-align: center;
-
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: rgb(183, 156, 49, .5) !important;
+    text-shadow: 0px 0px 4px rgb(183, 156, 49);;
 }
 
 
 #header1{
     display: flex;
     background-color: black;
+    opacity: 0.9;
     color: white;
     z-index: 100;
     top: 0;
@@ -145,7 +145,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     position: sticky;
     left: 0;
 }
@@ -157,28 +157,35 @@ body{
 }
 
 #header2{
-    height: 4vh;
+    height: 70px;
 }
 
 .header2{
     box-sizing: border-box;
-    position: relative;
-    top:0%;
-    left: 0;
     width: 100%;
     z-index: 100;
-    padding: 3% 5%;
-    display: flex;
-    justify-content: space-between;
+    background-color: white;
+    color: black;
+    transform: translate(50%, 0);
+
+}
+.grid-row{
+    position: relative;
+    z-index: 100;
+}
+.odd, .even{
+    position: relative;
+    z-index: 100;
 }
 
 #centerPoem p{
-    /* animation-name: poemOpacity; */
-    animation-duration: 25s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    display: none;
     text-shadow: 0px 2px 3px rgb(165, 172, 179);
-    color: rgba(165, 172, 179, 0.205) !important;
+    color: rgba(165, 172, 179, 0.735) !important;
+}
+#test{
+    z-index: 100;
+    position: relative;
 }
 
 #centerPoem p:nth-child(2) {
@@ -238,25 +245,10 @@ body{
 /*~~~~~~~~~~~~~~~all~~~~~~~~~~~~~~~*/
 
 
-.openlyhome{
-    text-decoration: none;
-    font-size: 3em;
-    z-index: 100;
-    color: rgb(183, 156, 49, .5) !important;
-}
-
-.openlyhome:hover{
-    opacity: 1;
-}
-
 #birds{
     filter: contrast(1.2); 
 }
 
-
-/* .openlyVid{
-    opacity: 0.85;
-} */
 
 #openly-intro{
     z-index: 100;
@@ -272,7 +264,7 @@ body{
 
 }
 
-.bgVideo, .openlyVid{
+.bgVideo{
     /* height: 100%; */
     overflow-x: hidden;
     width: auto;
@@ -285,6 +277,15 @@ body{
     margin: 0;
     z-index: 0;
     opacity: 0.9;
+}
+
+.openly-video{
+    width: 80vw;
+    max-width: 400px;
+    height: auto;
+    position: fixed;
+    right: 0;
+    top: 5vh;
 }
 
 #me{
@@ -315,10 +316,6 @@ body{
     font-size: 2.5rem;
     z-index: 100;
     padding-right: 2vw;
-}
-
-#toggle-vid{
-    z-index: 1;
 }
 
 /*~~~~~~~~~~~~~~~opening~~~~~~~~~~~~~~~*/
@@ -561,6 +558,16 @@ body{
     mix-blend-mode:darken;
 }
 
+#openly-poem{
+    position: absolute;
+    top: 10vh;
+    mix-blend-mode: lighten;
+}
+
+#openly-poem .row1{
+    display: flex;
+}
+
 #potholes .title{
     color: rgb(171, 7, 7) !important;
 }
@@ -568,7 +575,14 @@ body{
     width: 80%;
 }
 
-.pothole{
+.poem{
+    color: rgb(171, 7, 7) !important;
+    padding: 1%;
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.pothole, .poem{
     clear: both;
     text-align: right;
     padding: 5% 0;
