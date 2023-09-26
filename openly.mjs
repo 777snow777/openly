@@ -46,6 +46,8 @@ window.onload= (ev)=>{
         document.getElementById("openly-body").style.display = "none"
         document.getElementById("openly-poem").style.display = "none"
         document.getElementById("main-body").style.display = "block"
+        let bg = document.getElementById("bodyBg")
+        bg.id = "main"
     })
 
 }
