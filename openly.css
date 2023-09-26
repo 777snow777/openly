@@ -29,10 +29,12 @@ body, #main-body{
 }
 
 #bodyBg{
-    animation-name: bgColor;
-    animation-duration: 120s;
-    animation-iteration-count: infinite;
-    
+    background-color: rgb(0, 0, 0);    
+
+    /* background-color: rgb(231, 208, 167);     */
+    filter:hue-rotate(20deg);
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -140,11 +142,11 @@ body, #main-body{
 #header1{
     display: flex;
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.8;
     color: white;
     z-index: 100;
     top: 0;
-    height: 4vh;
+    height: 6vh;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -165,11 +167,13 @@ body, #main-body{
 
 .header2{
     box-sizing: border-box;
-    width: 100%;
+    width: 50%;
+    margin-left: 30%;
+    text-align: center;
     z-index: 100;
-    background-color: white;
+    opacity: 0.8;
+    background-color: rgb(234, 233, 254);
     color: black;
-    transform: translate(50%, 0);
 
 }
 .grid-row{
@@ -251,6 +255,7 @@ body, #main-body{
 
 #birds-vid{
     width: 90vw;
+    filter: brightness(1.1);
 }
 
 
@@ -570,13 +575,16 @@ body, #main-body{
 
 #openly-poem{
     position: absolute;
-    top: 10vh;
+    top: 6vh;
     mix-blend-mode: lighten;
 }
 
 #openly-poem .row1{
     display: flex;
     font-size: 1.1em;;
+}
+.row1 video{
+    width: 45vw;
 }
 
 #potholes .title{
@@ -587,9 +595,13 @@ body, #main-body{
 }
 
 .poem{
-    color: rgb(171, 7, 7) !important;
-    font-size: 1.25em;
+    color: rgb(255, 229, 182) !important;
+    font-size: 1.3rem;
+    text-align: end;
     font-weight: 800;
+    padding: 0 3%;
+    width: 45vw;
+    background: url("media/candle4.png");
 }
 
 .pothole{
