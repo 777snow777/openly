@@ -32,6 +32,10 @@ body, #main-body{
     display: none;
 }
 
+#bodyBg video{
+    /* z-index: 100; */
+}
+
 #bodyBg{
     background-size: contain;
     background-blend-mode: exclusion;
