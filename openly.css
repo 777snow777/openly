@@ -27,11 +27,6 @@ body, #main-body{
     color: rgb(183, 156, 49, .5) !important;
 }
 
-#main-body{
-    overflow: scroll;
-    top: 80vh;
-}
-
 
 video::-webkit-media-controls-start-playback-button {
     display: none !important;
@@ -44,14 +39,11 @@ video::-webkit-media-controls-start-playback-button {
 
 #bodyBg{
     background-color: rgb(182, 162, 126);
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
     background-blend-mode: lighten;
-    background-image: url("media/bg3.png");
-    filter: invert(0.85);
     width: 100vw;
     height: fit-content;
     min-height: 100%;
-    background-repeat: no-repeat;
 }
 
 
@@ -118,14 +110,7 @@ video::-webkit-media-controls-start-playback-button {
     overflow: hidden;
 }
 
-#openly-body{
-    position: relative;
-    width: 100%;
-    top: 0vh;
-    mix-blend-mode: color-burn;
-    background-color: #39395560;
-    min-height:fit-content;
-}
+
 
 @keyframes bgColor {
     0% {background-color: rgb(231, 208, 167)}
@@ -146,6 +131,7 @@ video::-webkit-media-controls-start-playback-button {
     display: flex;
     z-index: 100;
     top: 0;
+    filter: invert(0.85);
     height: 10vh;
     min-height: 100px;
     text-align: center;
@@ -167,6 +153,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #enter-openly{
+    filter: invert(0.8);
     box-shadow: 0 0px 20px #6c6cab;
     box-sizing: border-box;
     text-align: center;
@@ -183,7 +170,7 @@ video::-webkit-media-controls-start-playback-button {
 #intro{
     color: #3a3a59;
     background-color: rgb(204 192 146 / 86%);
-    text-shadow: 0 0 20px #010152;
+    text-shadow: 0 0 3px #010152;
     position: relative;
     margin: 2vh 20vw;
     width:60vw;
@@ -260,18 +247,6 @@ video::-webkit-media-controls-start-playback-button {
     background-color: rgb(255, 0, 221);
 }
 
-
-#openlyContainer{
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top:0vh;
-    width: 100%;
-    mix-blend-mode: lighten;
-    background-color: wheat;
-
-}
-
 /*~~~~~~~~~~~~~~~all~~~~~~~~~~~~~~~*/
 
 
@@ -279,8 +254,8 @@ video::-webkit-media-controls-start-playback-button {
     filter: brightness(1.1);
 } */
 #openly-poem{
-    filter: brightness(0.8);
-    position: absolute;
+    filter: invert(0.8);
+    /* position: absolute; */
     width:100%;
 }
 
@@ -293,7 +268,7 @@ video::-webkit-media-controls-start-playback-button {
 #me{
     width: 60%;
     position: relative;
-    filter: invert(0.25);
+    filter: invert(0.85);
 }
 
 
@@ -341,16 +316,6 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 
-.poemContainer{
-    color: white;
-    width: 100%;
-    z-index: 1;
-    top:0;
-    left:0;
-    height: fit-content;
-    min-height: 100vh;;
-}
-
 
 .title{
     color: rgb(109, 2, 2) !important;
@@ -383,7 +348,7 @@ video::-webkit-media-controls-start-playback-button {
 
 .opening-portal{
     position: fixed;
-    mix-blend-mode: multiply;
+    mix-blend-mode: lighten;
 }
 
 #opening-block2{
@@ -417,8 +382,8 @@ video::-webkit-media-controls-start-playback-button {
     display: flex;
     justify-content: space-between;   
     padding: 2%;
-    color: #f8bcbc;
-
+    mix-blend-mode: difference;
+    color: #ffe3e3;
 }
 
 #opening-right{
@@ -439,7 +404,8 @@ video::-webkit-media-controls-start-playback-button {
 #opening{
     padding-right: 5%;
     mix-blend-mode: plus-lighter;
-    color: red;
+    color: rgb(152, 152, 152);
+    background-color: rgb(173, 14, 14);
 }
 
 /*~~~~~~~~~~~~~~~perpendicular~~~~~~~~~~~~~~~*/
@@ -511,7 +477,6 @@ video::-webkit-media-controls-start-playback-button {
 #everyporeofskin{
     font-size: 1.3em;
     padding-left: 10%;
-    height: 25vh;   
     width: 60%;
     padding-top: 10%;;
 }
@@ -567,12 +532,19 @@ video::-webkit-media-controls-start-playback-button {
     height: fit-content;
     padding: 0% 5% 5% 5%;
     position: relative;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: difference;
     text-align: center;
 }
 
+#knuckles{
+    height: 40vh;
+    color: white;
+}
+
 #knuckles img{
+    position: absolute;
     width: 50%; 
+    left: 25%;
 }
 
 #opening-block4{
@@ -655,7 +627,7 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
     width:60vw;
     margin: 2vh 20vw;
-    mix-blend-mode: plus-lighter;
+    filter: invert(0.85);
 }
 
 
@@ -664,7 +636,7 @@ video::-webkit-media-controls-start-playback-button {
     top: 0;
     left: 50%;
     position: absolute;
-    color: #edcf95;
+    color: #000000;
     font-size: 2em;
     width: 30%;
     height: 30%;
@@ -948,20 +920,23 @@ margin-left: 30vw;
     text-shadow: rgba(249, 250, 250, 0.315) 115px 2px 5px;
 }
 
+#main-body{
+    mix-blend-mode: lighten;
+}
+
 .reopening-bg{
     position: absolute;
     width: 100vw;
-    opacity: 0.3;
     height: auto;
-    mix-blend-mode: color;
+    mix-blend-mode: screen;
     bottom: 0;
 }
 
-#swamp{
+.swamp{
     position: fixed;
     top: 0;
     left:0;
-    opacity: 0.4;
+    opacity: 0.8;
     height: 100vh;
-    width: 100vw;
+    width: auto;
 }
