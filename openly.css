@@ -10,6 +10,9 @@
     #thro-our-knuckles{
         font-size: 2em;
     }
+    #bodyBg{
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -82,7 +85,7 @@ video::-webkit-media-controls-start-playback-button {
 #reopening-vid-container{
     mix-blend-mode: darken;
     width: 94%;
-    color: #b10000;;
+    color: #d7d2d2;;
     font-size: 2rem;
     padding: 3%;
     font-weight: 800;
@@ -159,8 +162,7 @@ video::-webkit-media-controls-start-playback-button {
     text-align: center;
     font-weight: 800;
     width: 90%;
-    font-size: 2.6em;
-    margin: 5% 50%;
+    margin: 20% 50%;
     transform: translate(-50%, 0);
     padding: 5%;
     mix-blend-mode: exclusion;
@@ -174,9 +176,30 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
     margin: 2vh 20vw;
     width:60vw;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-weight: 600; 
 }
+
+#intro3{
+ margin-top: 5%;
+ width: 60%;
+ font-weight: 600;
+ padding: 5% 20%;
+ font-size: 3em;
+ color: #eceaea;
+ background-color: rgba(188, 189, 212, 0.86);
+}
+
+#intro4{
+    margin-top: 5%;
+    width: 80%;
+    font-weight: 600;
+    padding: 5% 10%;
+    font-size: 2em;
+    color: #040404;
+    text-shadow: 0 2px 3px white;
+    background-color: rgba(185, 195, 153, 0.86);
+   }
 
 
 #openly-header{
@@ -266,9 +289,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #me{
-    width: 60%;
+    width: 80%;
     position: relative;
-    filter: invert(0.85);
 }
 
 
@@ -318,13 +340,12 @@ video::-webkit-media-controls-start-playback-button {
 
 
 .title{
-    color: rgb(109, 2, 2) !important;
+    color: rgb(206, 0, 0) !important;
     position: relative;
     font-weight: 400;
     font-size: 3.5rem;
     font-weight: 500;
     z-index: 100;
-    padding: 2vw;
 }
 
 /*~~~~~~~~~~~~~~~opening~~~~~~~~~~~~~~~*/
@@ -391,6 +412,10 @@ video::-webkit-media-controls-start-playback-button {
     width: 20%;
     font-size: 0.8em;
     margin-top: 20%;
+}
+
+#opening-right .title{
+    color: white !important;
 }
 
 #portal-opening{
@@ -464,24 +489,25 @@ video::-webkit-media-controls-start-playback-button {
 /*~~~~~~~~~~~~~~~with every pore of my skin~~~~~~~~~~~~~~~*/
 
 #everypore{
-    text-shadow: 0px 0px 2px rgb(255, 255, 255);
     height: fit-content;
     width:100vw;
     filter:contrast(1.5);
     overflow: visible;
     position: relative;
-    mix-blend-mode: lighten;
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
 }
 
 
 #everyporeofskin{
     font-size: 1.3em;
-    padding-left: 10%;
+    padding-left: 20%;
     width: 60%;
     padding-top: 10%;;
 }
 #everyporeofskin2{
-    width: 60%;
+    font-size: 1.8em;
+    margin-top: 15%;
+    width: 80%;
     padding-bottom: 10%;
     padding-left: 5%;
 }
@@ -533,18 +559,16 @@ video::-webkit-media-controls-start-playback-button {
     padding: 0% 5% 5% 5%;
     position: relative;
     mix-blend-mode: difference;
+    font-size: 3em;
+    font-weight: 900;
+    color: #000000;
+    text-shadow: 0 0 10px white;
     text-align: center;
 }
 
-#knuckles{
-    height: 40vh;
-    color: white;
-}
-
 #knuckles img{
-    position: absolute;
     width: 50%; 
-    left: 25%;
+    margin-left: 22.%;
 }
 
 #opening-block4{
@@ -574,13 +598,12 @@ video::-webkit-media-controls-start-playback-button {
     margin-top: 10%;
     padding: 1%;
     font-size: 2em;
+    text-shadow: 0 0 40px rgb(255, 0, 0);
     font-weight: 800;
-    line-height: 10%;
     height: fit-content;
     overflow: visible;
-    color: rgba(107, 0, 0, 0.589);
+    color: rgb(176, 188, 226);
     background-size: cover;
-    mix-blend-mode:darken;
 }
 
 #album{
@@ -631,7 +654,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 
-.intro2 {
+#intro2 {
     z-index: 100;
     top: 0;
     left: 50%;
@@ -641,6 +664,8 @@ video::-webkit-media-controls-start-playback-button {
     width: 30%;
     height: 30%;
 }
+
+
 
 #potholes .title{
     color: rgb(171, 7, 7) !important;
@@ -669,7 +694,6 @@ video::-webkit-media-controls-start-playback-button {
 #sunspots, #softspot2{
     mix-blend-mode: plus-lighter;
     padding: 3%;
-    font-size: 2.2em;
     margin-top: 10vh;
 }
 
@@ -678,6 +702,10 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #83557d;
     color: rgba(196, 200, 203, 0.856);
     padding: 1.5%;
+    font-size: 60px;
+    text-shadow: 3px 2px 3px white;
+    font-weight: 700;
+
 }
 
 #sunspot2{
@@ -686,7 +714,7 @@ video::-webkit-media-controls-start-playback-button {
     width: 100%;
     opacity: 0.5;
     padding: 0 2%;
-    font-size: 3.5em;
+    font-size: 4.5em;
     position: relative;
 
 }
@@ -710,8 +738,8 @@ video::-webkit-media-controls-start-playback-button {
 
 
 #softspot2 img{
+    filter:invert(1);
     width: 100%;
-    mix-blend-mode: darken;
 }
 
 #softspot{
@@ -805,6 +833,7 @@ video::-webkit-media-controls-start-playback-button {
     font-weight: 100;
     mix-blend-mode: plus-lighter;
     color: #ffffff;
+    text-align: end;
 }
 
 #softspiral .title{
