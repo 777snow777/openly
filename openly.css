@@ -174,9 +174,22 @@ video::-webkit-media-controls-start-playback-button {
     background-color: rgb(204 192 146 / 86%);
     text-shadow: 0 0 3px #010152;
     position: relative;
-    margin: 2vh 20vw;
-    width:60vw;
-    font-size: 3.5em;
+    margin: 2vh 10vw;
+    width:80vw;
+    font-size: 4em;
+    font-weight: 600; 
+}
+
+#intro5{
+    color: #4e4e77;
+    box-sizing: border-box;
+    background-color: #d0d6ae61;
+    text-shadow: 0 0 10px #9999c5;
+    position: relative;
+    margin: 2vh 10vw;
+    width:80vw;
+    padding: 1%;
+    font-size: 3em;
     font-weight: 600; 
 }
 
@@ -343,9 +356,10 @@ video::-webkit-media-controls-start-playback-button {
     color: rgb(206, 0, 0) !important;
     position: relative;
     font-weight: 400;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
     font-weight: 500;
     z-index: 100;
+    padding: 2%;
 }
 
 /*~~~~~~~~~~~~~~~opening~~~~~~~~~~~~~~~*/
@@ -435,56 +449,50 @@ video::-webkit-media-controls-start-playback-button {
 
 /*~~~~~~~~~~~~~~~perpendicular~~~~~~~~~~~~~~~*/
 
-#perpendicular-imgs img:nth-child(1){
-    width: 20%;
-    min-width: 300px;
-    top: 20vh;
-    left: 30%;
+#perpendicular .title{
+    color: rgb(255, 227, 227) !important;
 }
-#perpendicular-imgs img:nth-child(2){
-    width: 20%;
-    right: 10%;
-    top: 40%;
-}
-#perpendicular-imgs img:nth-child(3){
-    width: 10%;
-    right: 5%;
-    bottom: 1vh;
-    min-width: 200px;
-}
-
 #perpendicularPoem{
     color: #f3ebebc9;
     text-shadow: 0 0 10px rgb(255 255 255);
     font-size: 2.5em;
     width: 35%;
     z-index: 100;
-    position: absolute;
-    right: 3%;
-    top: 18%;
+    margin-left: 50%;
     font-weight: 100;
     height: 15vh;
     text-align: end;
 }
 
-#perpendicular video{
-    mix-blend-mode: plus-lighter;
-    transform: rotate(180deg);
+#perpendicular-imgs2{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2%;
+    justify-content: space-evenly;
+    mix-blend-mode: color-burn;
+}
+
+#perpendicular-imgs2 img{
+    width: 80vw;
+    max-width: 500px;
+    height: auto;
+    padding: 1%;
+}
+#perpendicular-imgs2 img:nth-child(even){
+    transform: rotate(90deg);
 }
 
 #perpendicular{
     background-image: url("media/fence.jpg");
-    height: 70vh;
     position: relative;
     margin-top: 10%;
+    width: 100%;
     padding: 5%;
-    filter: brightness(1.15);
-    mix-blend-mode: lighten;
+    filter: brightness(1.45);
+    mix-blend-mode: color-burn;
 }
-#perpendicular img{
-    position: absolute;
-    z-index: 100;
-}
+
 
 /*~~~~~~~~~~~~~~~with every pore of my skin~~~~~~~~~~~~~~~*/
 
@@ -503,19 +511,22 @@ video::-webkit-media-controls-start-playback-button {
     padding-left: 20%;
     width: 60%;
     padding-top: 10%;;
+    font-weight: 100;
+
 }
 #everyporeofskin2{
+    font-weight: 800;
     font-size: 1.8em;
     margin-top: 15%;
-    width: 80%;
+    width: 50%;
     padding-bottom: 10%;
-    padding-left: 5%;
+    padding-left: 10%;
+
 }
 
 #everyporeofskin p, #everyporeofskin2 p{
     color: rgba(221, 216, 194, 0.65);
     font-size: 1.1em;
-    font-weight: 100;
     line-height: 0.75em;
 }
 
@@ -560,9 +571,9 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
     mix-blend-mode: difference;
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 600;
     color: #000000;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 50px rgb(255, 255, 255);
     text-align: center;
 }
 
@@ -602,7 +613,7 @@ video::-webkit-media-controls-start-playback-button {
     font-weight: 800;
     height: fit-content;
     overflow: visible;
-    color: rgb(176, 188, 226);
+    color: rgb(231, 232, 233);
     background-size: cover;
 }
 
@@ -668,17 +679,17 @@ video::-webkit-media-controls-start-playback-button {
 
 
 #potholes .title{
-    color: rgb(171, 7, 7) !important;
+    color: rgb(176, 188, 226) !important;
+    
 }
 #potholes p{
     width: 80%;
 }
 
-
 .poem{
     font-size: 2.2rem;
     text-align: center;
-    font-weight: 600;
+    font-weight: 100;
     padding: 0 3%;
     color:rgba(164, 164, 164, 0.665);
 }
@@ -714,7 +725,7 @@ video::-webkit-media-controls-start-playback-button {
     width: 100%;
     opacity: 0.5;
     padding: 0 2%;
-    font-size: 4.5em;
+    font-size: 6.5rem;
     position: relative;
 
 }
@@ -829,10 +840,11 @@ video::-webkit-media-controls-start-playback-button {
 #soft-spiral{
     position: relative;
     padding: 2%;
-    font-size: 0.6em;
+    font-size: 0.9em;
     font-weight: 100;
     mix-blend-mode: plus-lighter;
-    color: #ffffff;
+    color: #ced060;
+    text-shadow: 0 0 3px white;
     text-align: end;
 }
 
@@ -954,11 +966,18 @@ margin-left: 30vw;
 }
 
 .reopening-bg{
+    top:0;
+    left: 0;
     position: absolute;
     width: 100vw;
     height: auto;
-    mix-blend-mode: screen;
-    bottom: 0;
+    background-color: rgb(168, 168, 123);
+    filter: hue-rotate(40deg) brightness(1.3);
+}
+
+.reopening-bg{
+    width: 100%;
+    height: auto;
 }
 
 .swamp{
