@@ -16,12 +16,7 @@
 
 }
 
-audio::-webkit-media-controls-panel {
-    background-color: #6363843a;
-    color: white;
-}
-
-body, #main-body{
+body, .main-body{
     position: relative;
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -82,22 +77,6 @@ video::-webkit-media-controls-start-playback-button {
 
 /*~~~~~~~~~~~~~~~openly~~~~~~~~~~~~~~~*/
 
-#reopening-vid-container{
-    mix-blend-mode: darken;
-    width: 94%;
-    color: #d7d2d2;;
-    font-size: 2rem;
-    padding: 3%;
-    font-weight: 800;
-    text-align: end;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-end;
-}
-
-#reopening-vid{
-    z-index: 100;
-}
 
 #openly-main p{
     padding: 0% 2%;
@@ -151,9 +130,19 @@ video::-webkit-media-controls-start-playback-button {
 #enter-openly, #header1{
     color: rgb(0 0 0 / 70%) !important;
     background-color: #27276ce7;
+}
+
+#header1{
+    text-shadow: 0 0 10px rgb(82, 79, 72);
+    opacity: 0.75;
+
+}
+
+#enter-openly{
     text-shadow: 0 0 30px rgb(255, 247, 227);
     opacity: 0.95;
 }
+
 
 #enter-openly{
     filter: invert(0.8);
@@ -207,11 +196,23 @@ video::-webkit-media-controls-start-playback-button {
     background-color: rgba(188, 189, 212, 0.86);
 }
 
-#intro6{
-    padding: 5% 10%;
-    width: 80%;
+#reopening-vid-cont{
+    position: relative;
+    width: 70vw;
     color:rgb(208, 207, 207);
-    background-color: #a6ac9e;
+    z-index: 100;
+    padding: 5% 15vw;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#reopening-video{
+
+    width:100%;
+    mix-blend-mode: normal;
+    background-color: black;
+    height: auto;
+    z-index: 100;
 }
 
 #intro4{
@@ -376,11 +377,6 @@ video::-webkit-media-controls-start-playback-button {
 /*~~~~~~~~~~~~~~~opening~~~~~~~~~~~~~~~*/
 
 
-#lately-audio{
-    z-index: 100;
-    height: 50px;
-    width: 95%;
-}
 
 #lately-poem{
     padding-top: 10%;
@@ -633,36 +629,34 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #39395560;
 }
 
-.song-container{
-    width: 100%;
-    
-    align-items: center;
-    display: flex;
-    height: fit-content;
-    min-height: 10vh;;
-    overflow: hidden;
-    justify-content: flex-end;
+.audio{
+    height: 54px;
+    mix-blend-mode: color-dodge;
+    /* background-color: rgba(255, 39, 39, 0.846); */
+    border: none;
+    padding: 0;
+    width: fit-content;
+    margin: 40px 20px 20px 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
 }
 
-.song{
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0px,-50%);
+audio{
+    width: 60vw!important;
+    max-width: 700px;
 }
 
-.song-title{
-    margin: 0 5%;
-    font-size: 2.5em;
+#opening-right audio{
+    width: 30vw !important;
 }
 
 
-.song-title, .audio-container{
-    color: rgb(183, 156, 49, .5) !important;
-    font-weight: 400;
-    text-shadow: 0 0 5px white;
-}
+
+audio::-webkit-media-controls {
+     background-color: rgb(255, 255, 255) !important;
+     color: #000;
+     }
 
 #openly-poem{
     mix-blend-mode: lighten;
@@ -969,7 +963,7 @@ margin-left: 30vw;
 
 }
 
-#main-body{
+.main-body{
     mix-blend-mode: lighten;
 }
 
