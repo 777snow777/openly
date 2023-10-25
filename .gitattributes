@@ -1,5 +1,1 @@
-media/songs/tomyskin.wav filter=lfs diff=lfs merge=lfs -text
-media/songs/potholes.wav filter=lfs diff=lfs merge=lfs -text
-media/reopeningvideo.mp4 filter=lfs diff=lfs merge=lfs -text
-media/reopeningvideo2.mp4 filter=lfs diff=lfs merge=lfs -text
 *.mp4 filter=lfs diff=lfs merge=lfs -text
