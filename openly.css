@@ -1073,6 +1073,34 @@ margin-left: 30vw;
     width: auto;
 }
 
-#stillness{
+#pages{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#pages img:nth-child(1){
+    width: 60%;
+    height: 100%;
+}
+#pages img:nth-child(2){
+    width: 40%;
+    height: 100%;
+}
+#pages img:nth-child(3){
+    width: 40%;
+    height: 100%;
+}
+#pages img:nth-child(4){
+    width: 60%;
+    height: 100%;
+}
+
+#tohold h1{
+    color: #ffaa11;
+    text-shadow: 0 10px 8px #b46c6c;
+    mix-blend-mode: multiply;
+    font-size: 3em;
+    font-style: italic;
+    padding-left: 10%;
 }
