@@ -207,7 +207,7 @@ video::-webkit-media-controls-start-playback-button {
 
 #intro1{
     padding: 1%;
-    color: #0e180b;
+    color: #345829;
     background-color: rgb(0 0 0 / 40%);
     text-shadow: 0 0 3px #83ffa0;
     position: relative;
@@ -291,6 +291,9 @@ video::-webkit-media-controls-start-playback-button {
     background-color: rgba(185, 195, 153, 0.86);
    }
 
+#full-link{
+    background-color: white;
+}
 
 #openly-header{
     display: flex;
