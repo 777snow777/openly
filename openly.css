@@ -502,6 +502,7 @@ video::-webkit-media-controls-start-playback-button {
     height: 30vh;
     top: 50vh;
     left: 0vw;
+    z-index: 0;
 }
 
 #opening-block img{

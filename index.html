@@ -18,13 +18,8 @@
             <div>this website is a stream that will hold my textured poems, special recordings, and other sonic play.<br> my intention is that this will be a slowly flowing listening space, filled with friction and experienced differently upon every visit</div>  
             <br>
         </div>
-        <div>
-            <div>
-
-            </div>
-        </div>
         <img src="media/swamp.png" class="swamp"/>
-        <div id="opening-block" class = "opening-portal"><img src="media/heart.JPG"></div>
+        <div id="opening-block" class = "opening-portal"></div>
         <div id="opening-block2" class = "opening-portal"></div>
         <div id="opening-block3" class = "opening-portal"></div>
         <div id="opening-block5" class = "opening-portal"></div>
@@ -455,6 +450,12 @@
             </div>
         </div>
     </body>
-    
-    
+    <script>
+        window.addEventListener("load", (event) => {
+            let hrt = document.getElementById("opening-block")
+            let img = document.createElement("img")
+            img.src = "media/heart.JPG"
+            hrt.appendChild(img)
+        })
+    </script>
 </html>
