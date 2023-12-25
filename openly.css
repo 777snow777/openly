@@ -109,10 +109,11 @@ video::-webkit-media-controls-start-playback-button {
     font-weight: 200;;
 }
 
+
 #header1{
     top: 0;
     filter: invert(0.85);
-    height: 10vh;
+    height: 4vh;
     min-height: 100px;
     font-weight: 800;
     font-size: 3.5rem;
@@ -133,7 +134,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #header2{
-    top: 10vh;
+    top: 5vh;
     height: 5vh;
     background-color: rgb(151, 0, 0);
     color: white;
@@ -1128,9 +1129,45 @@ margin-left: 30vw;
 
 }
 
-#tohold .audio{
+#tohold .audio, #snowfairy .audio{
     border: 2px solid black;
     box-sizing: content-box;
+    mix-blend-mode: color-burn;
+    padding: 0;
+    margin-left: 0;
+}
+
+#sf-header{
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+#snowfairy h1{
+    margin-top: 0;
+}
+
+#snowfairy{
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding: 1% 5%;
+    mix-blend-mode: color-burn;
+    color: #161636;
+    text-shadow: 0 2px 5px #710d0d;
+}
+
+#sf-poem{
+    font-size: 1.1em;
+    padding: 2%;
+    display: flex;
+}
+#sf-poem p{
+    padding: 1%;
+}
+
+#sf-poem img{
+    width: 40%;
+    height: auto;
 }
 
 #tohold p{
