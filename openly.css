@@ -124,7 +124,7 @@ video::-webkit-media-controls-start-playback-button {
     text-shadow: 0 0 10px rgb(82, 79, 72);
     opacity: 0.75;
     position: sticky;
-    width: 105vw;
+    width: 101vw;
     left: 0;
     text-align: center;
     z-index: 100;
@@ -983,23 +983,21 @@ margin-left: 30vw;
 }
 
 #insidethelight7{
-    background-color: yellowgreen;
-    color: rgba(0, 0, 0, 0.308);
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.719);
-    padding: 15%;
-    opacity: 0.6;
-    mix-blend-mode: color-dodge;
+    width: 25%;
+    background-color: black;
+    color: rgb(255 255 255);
+    padding: 3%;
+    opacity: 0.9;
 }
 
 #insidethelight8{
-    width: 100%;
+    width: 75%;
     mix-blend-mode: overlay;
-    position: absolute;
-    top: 85%;
 }
 #insidethelight9{
-    position: relative;
-    overflow: visible;
+    width: 100%;
+    mix-blend-mode: overlay;
+    display: flex;
 }
 
 .light{
@@ -1060,10 +1058,8 @@ margin-left: 30vw;
 
 #main-openly{
     mix-blend-mode: lighten;
-}
+    width: 101vw;
 
-.main-body{
-    /* mix-blend-mode: lighten; */
 }
 
 .reopening-bg{
@@ -1099,7 +1095,7 @@ margin-left: 30vw;
 }
 
 .pages img:nth-child(1){
-    width: 60%;
+    width: 40%;
     height: 100%;
 }
 .pages img:nth-child(2){
@@ -1152,7 +1148,7 @@ margin-left: 30vw;
     font-size: 1.2em;
     padding: 1% 5%;
     mix-blend-mode: color-burn;
-    color: #161636;
+    color: #b2f57b;
     text-shadow: 0 2px 5px #710d0d;
 }
 
