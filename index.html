@@ -7,6 +7,7 @@
         <script src="openly.mjs" type="module"></script>   
     </head>
     <body id="bodyBg">
+        <div id="load"></div>
         <div id="header1" class="header">
             <p>dwelling online, inside a stream</p>
         </div>
@@ -19,7 +20,7 @@
             <br>
         </div>
         <img src="media/swamp.png" class="swamp"/>
-        <div id="opening-block" class = "opening-portal"></div>
+        <div id="opening-block" class = "opening-portal"><img src="media/heart.JPG"></div>
         <div id="opening-block2" class = "opening-portal"></div>
         <div id="opening-block3" class = "opening-portal"></div>
         <div id="opening-block5" class = "opening-portal"></div>
@@ -452,10 +453,8 @@
     </body>
     <script>
         window.addEventListener("load", (event) => {
-            let hrt = document.getElementById("opening-block")
-            let img = document.createElement("img")
-            img.src = "media/heart.JPG"
-            hrt.appendChild(img)
+            let load = document.getElementById("load")
+            load.style.display="none"
         })
     </script>
 </html>
