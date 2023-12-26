@@ -498,12 +498,18 @@ video::-webkit-media-controls-start-playback-button {
     background: #c7d3dd;
 }
 #opening-block{
-    width: 60vw;
+    width: 30vw;
     height: 30vh;
-    top: 50vh;
+    top: 40vh;
     left: 0vw;
     z-index: 0;
 }
+
+@media only screen and (max-width: 1200px) {
+    #opening-block {
+        width: 60vw !important;
+    }
+  }
 
 #opening-block img{
     width: 100%;
