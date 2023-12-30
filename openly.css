@@ -30,14 +30,26 @@ video::-webkit-media-controls-start-playback-button {
     display: none !important;
   }
 
-  /* .media-controls-container{
-      display: none !important;
-  } */
 
+#opening-vid video{
+    width: 190px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 85vw;
+    opacity: 0.75;
+    transform: translate(0, -70px);
+}
+
+#opening-vid{
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: exclusion;
+
+}
 
 #bodyBg{
     background-color: rgb(182, 162, 126);
-    /* mix-blend-mode: exclusion; */
     background-blend-mode: lighten;
     width: 100vw;
     height: fit-content;
@@ -135,7 +147,8 @@ video::-webkit-media-controls-start-playback-button {
 
 #header2{
     top: 5vh;
-    height: 5vh;
+    font-size: 1.35em;
+    height: 45vh;
     background-color: rgb(151, 0, 0);
     color: white;
     mix-blend-mode: color-burn;
@@ -225,7 +238,7 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
     margin: 2vh 10vw;
     width: 80vw;
-    font-size: 1em;
+    font-size: 1.25em;
     z-index: 100;
     font-weight: 900;
 }
@@ -1158,7 +1171,6 @@ margin-left: 30vw;
 }
 
 #tohold .audio, #snowfairy .audio{
-    border: 2px solid black;
     box-sizing: content-box;
     mix-blend-mode: color-burn;
     padding: 0;
