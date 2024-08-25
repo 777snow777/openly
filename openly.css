@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'defaultFont'; 
+    src: url(/openly/SIXTY.ttf); 
+}
+
+body, .main-body {
+    font-family: 'defaultFont';
+}
+
 @media only screen and (max-width: 1500px) {
     .title {
       font-size: 200px;
@@ -18,9 +27,9 @@
 
 body, .main-body{
     position: relative;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    /* font-family: 'Lato', Helvetica, Arial, sans-serif; */
     margin: 0;
-    font-weight: 400;
+    font-size: 1.5rem;
     text-shadow: 0px 2px 3px rgb(49 92 183);
     color: rgb(183, 156, 49, .5) !important;
 }
@@ -34,7 +43,6 @@ video::-webkit-media-controls-start-playback-button {
 #opening-vid video{
     width: 190px;
     height: auto;
-    border-radius: 10px;
     margin-right: 0;
     margin-left: 75vw;
     opacity: 0.75;
@@ -139,18 +147,18 @@ video::-webkit-media-controls-start-playback-button {
     width: 101vw;
     left: 0;
     text-align: center;
-    z-index: 90;
+    z-index: 1;
     align-items: center;
     justify-content: center;
     display: flex;
 }
 
 #header2{
-    top: 5vh;
-    font-size: 1.35em;
+    top: 0vh;
+    font-size: 1.75em;
     height: 45vh;
-    background-color: rgb(151, 0, 0);
-    color: white;
+    background-color: rgb(221 221 221);
+    color: black;
     mix-blend-mode: color-burn;
 }
 
@@ -183,30 +191,30 @@ video::-webkit-media-controls-start-playback-button {
 
 #stillness{
     display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+
+#stillness p{
+    color: #00000052;
+    text-shadow: 1px 1px 2px wheat;
+    text-align: center;
+    width: 100%;
 }
 
 #stillmylove{
-    background-color: #b46c6c;
     padding: 2% 0;
-    color: #d3caca;
-    mix-blend-mode: lighten;
 }
-#stillmylove .images{
-    width: 40%;
-    margin-left: 10%;
+#stillness img{
+    width: 48%;
+    opacity: 0.75;
     box-sizing: border-box;
 }
 
-#stillmylove .images img{
+#stillmylove img{
     width: 100%;
     height: auto;
-    padding: 1%;
-}
-#stillmylove p{
-    padding-left: 10%;
-    width: 40%;
-    text-align: justify;
-
 }
 
 #stillmylove h1{
@@ -510,13 +518,6 @@ video::-webkit-media-controls-start-playback-button {
     opacity: 0.7;
     background: #c7d3dd;
 }
-#opening-block{
-    width: 30vw;
-    height: 30vh;
-    top: 40vh;
-    left: 0vw;
-    z-index: 0;
-}
 
 #load{
     position: fixed;
@@ -527,18 +528,6 @@ video::-webkit-media-controls-start-playback-button {
     z-index: 100;
     background-color: #27276c;
     opacity: 0.6;
-}
-
-
-@media only screen and (max-width: 1200px) {
-    #opening-block {
-        width: 60vw !important;
-    }
-  }
-
-#opening-block img{
-    width: 100%;
-    height: auto;
 }
 
 #opening-block3{
@@ -768,23 +757,6 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #39395560;
 }
 
-.audio{
-    height: 54px;
-    mix-blend-mode: color-dodge;
-    /* background-color: rgba(255, 39, 39, 0.846); */
-    border: none;
-    padding: 0;
-    /* width: fit-content; */
-    margin: 40px 20px 20px 20px;
-    box-sizing: border-box;
-    z-index: 100;
-    position: relative;
-}
-
-audio{
-    width: 100%;
-   
-}
 
 #opening-right audio{
     width: 30vw !important;
@@ -1224,4 +1196,108 @@ margin-left: 30vw;
     width: 70%;
     background-color: rgb(182, 157, 157);
 
+}
+
+#obfuscation-1{
+    font-size: 2em;
+    width: 100%;
+}
+
+#obf-img1{
+    width: 100%;
+    opacity:0.5;
+}
+
+.obfuscation-header{
+    padding-left: 10%;
+}
+
+#obf-1{
+    z-index: 1;
+
+}
+
+.audio-cont{
+    height: 54px;
+    width: 50%;   
+    border: none;
+    padding: 0;
+    margin: 40px 20px 20px 20px;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+    mix-blend-mode: color-burn;
+
+}
+
+.audio-cont audio{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: scale(2, 3);
+    width: 90%;
+    filter: blur(0.5px);
+}
+
+audio{
+    width: 100%;
+}
+
+.obf-1-desc{
+    width: 60vw;
+    line-height: 30%;
+    font-size: 0.6em;
+    top: 0vh;
+    z-index: 1;
+    position: relative;
+    padding-left: 30%;
+    text-align: right;
+}
+
+#obfuscation-header, .obf-1-desc{
+    mix-blend-mode: lighten;
+    color: #1a1919;
+    text-shadow: -00px -1px 3px rgb(255 255 255);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #obf-1-vis {
+        width: 60vw !important;
+    }
+  }
+
+#obf-1-vis img{
+    width: 50%;
+    height: auto;
+    filter: saturate(50%);  
+    padding-left: 50%;
+    transform: translate(-25%, 0); 
+}
+
+#obf-1-vis {
+    mix-blend-mode: darken;
+}
+
+#obf-img2{
+    filter: invert(0.8);
+    width: 50%;
+}
+
+#obf-desc-2{
+    display: flex;
+    padding-left: 0;
+    width: 100%;
+}
+
+#obf-desc-2 div{
+    width: 50%;
+}
+
+#obf-vis{
+    mix-blend-mode: lighten;
+}
+
+#obf-1-vis{
+    mix-blend-mode: darken;
 }
