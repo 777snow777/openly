@@ -7,10 +7,15 @@
         <script src="openly.mjs" type="module"></script>   
     </head>
     <body id="bodyBg">
-        <div id="load"></div>
-        <div id="header1" class="header">
-            <p>dwelling online, inside a stream</p>
+        <div id="load">
+            <div>
+                <video src="https://dl.dropbox.com/scl/fi/5p5mp9em7bi8t1ls78nq9/obf1.mp4?rlkey=yqpq7rha0ecb3uzj5ne68esyr&st=tm4u5cmd&dl=0" autoplay='false' playsinline="" loop='true' type="video/mp4" muted="true"></video>
+            </div>
         </div>
+
+        <!-- <div id="header1" class="header">
+            <p>dwelling online, inside a stream</p>
+        </div> -->
         <div id="header2" class="header">
             <p>From The River To The Sea, Palestine Will Be Free</p>
         </div>
@@ -19,14 +24,12 @@
             <div>this website is a stream that will hold my textured poems, special recordings, and other sonic play.<br> my intention is that this will be a slowly flowing listening space, filled with friction and experienced differently upon every visit</div>  
             <br>
         </div>
-        <!-- <div id="opening-vid">
-            <video src="media/play.mov" playsinline controls controlsList="nodownload" loop></video>
-        </div> -->
         <img src="media/swamp.png" class="swamp"/>
-        <div id="opening-block2" class = "opening-portal"></div>
-        <div id="opening-block3" class = "opening-portal"></div>
+        <div id="opening-block2" class = "opening-portal">
+            <video src="media/openly.mp4" autoplay='true' playsinline="" loop='true' type="video/mp4" class="bgVideo" muted="true"></video>
+        </div>
+        <!-- <div id="opening-block3" class = "opening-portal"></div> -->
         <div id="opening-block5" class = "opening-portal"></div>
-        <video src="media/openly.mp4" id="openly-vid" autoplay='true' playsinline="" loop='true' type="video/mp4" class="bgVideo" muted="true"></video>
         <div class="main-body">
             <div id="obfuscation-1">
                 <div class="obfuscation-header">
@@ -48,7 +51,7 @@
                         <p>how do we resist structures we cannot see?</p>
                         <p>how can we become structures unseeable?</p>
                     </div>
-                    <img id="obf-img1" src="media/obf.jpg">
+                    <img id="obf-img1" src="media/dns.png">
                     <div class="obf-1-desc" id="obf-desc-2">
                         <!-- <img id="obf-img2" src="media/hrt.png"> -->
                         <div>
@@ -61,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="obf-1-vis">
+                <div class="obf-1-vis">
                     <img src="media/cable.png">
                 </div>
             </div>
@@ -71,7 +74,7 @@
                     <p>walking into someone else’s dream<br>opening space to love inside this dream<br> watching them be infinitely protected in this dream <br>you slice and burn and leak among landscapes you didn’t create <br>and they are untouched, laughing at the magic of a space where they can never be hurt <br>you scream and hear nothing. <br>you scream and can feel it vibrate through your chest</p>
                 </div>
                 <p>produced with my dear friend Paria (fairy-diamond). released by 29 Speedway in November 2023 <a href="https://soundcloud.com/29-speedway/mix02-snow-fairy">here</a></p>
-                <div id="sf-audio" class="audio-cont"><audio controls src="https://dl.dropbox.com/scl/fi/52mfp8nlyy2520idvme2o/snow-jam-v13.wav?rlkey=l040psfxxy0sidavdkfqb7n1o&st=flnhccqe&dl=0"></audio></div>
+                <div class="audio-cont"><audio controls src="https://dl.dropbox.com/scl/fi/52mfp8nlyy2520idvme2o/snow-jam-v13.wav?rlkey=l040psfxxy0sidavdkfqb7n1o&st=flnhccqe&dl=0"></audio></div>
                 <div id="sf-poem">
                     <p>
                         I walked further and further inside<br>
@@ -477,9 +480,12 @@
         </div>
     </body>
     <script>
-        window.addEventListener("load", (event) => {
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        window.addEventListener("load", async (event) => {
             let load = document.getElementById("load")
-            load.style.display="none"
+            <!-- await delay(25000); -->
+            load.style.display = "none";
         })
     </script>
 </html>

@@ -3,9 +3,6 @@
     src: url(/openly/SIXTY.ttf); 
 }
 
-body, .main-body {
-    font-family: 'defaultFont';
-}
 
 @media only screen and (max-width: 1500px) {
     .title {
@@ -156,10 +153,12 @@ video::-webkit-media-controls-start-playback-button {
 #header2{
     top: 0vh;
     font-size: 1.75em;
-    height: 45vh;
+    height: 50vh;
+    font-size: 1.5em !important;
     background-color: rgb(221 221 221);
     color: black;
     mix-blend-mode: color-burn;
+    font-weight: 900;
 }
 
 #enter-openly, #header1{
@@ -474,7 +473,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 #openly-vid{
     filter: contrast(1.35) brightness(1.1);
-    top: 40vh;
+    top: 50vh;
     opacity: 0.8;
 }
 
@@ -510,24 +509,13 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #opening-block2{
-    width: 80vw;
-    height: 40vh;
-    top: 10vh;
+    width: 100vw;
+    height: 50vh;
+    top: 0vh;
     z-index: 0;
     left: 0vw;
-    opacity: 0.7;
+    opacity: 0.9;
     background: #c7d3dd;
-}
-
-#load{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 101vw;
-    height: 100%;
-    z-index: 100;
-    background-color: #27276c;
-    opacity: 0.6;
 }
 
 #opening-block3{
@@ -535,7 +523,7 @@ video::-webkit-media-controls-start-playback-button {
     height: 70vh;
     right: 0;
     padding-right: 5%;
-    top: 15vh;
+    top: 0vh;
     background: #ffffff4f;
 }
 
@@ -572,7 +560,7 @@ video::-webkit-media-controls-start-playback-button {
     padding-right: 5%;
     mix-blend-mode: lighten;
     color: rgb(152, 152, 152);
-    background-color: rgb(173, 14, 14);
+    background-color: rgb(110 0 0);
 }
 
 /*~~~~~~~~~~~~~~~perpendicular~~~~~~~~~~~~~~~*/
@@ -1104,7 +1092,8 @@ margin-left: 30vw;
     left:0;
     opacity: 0.8;
     height: 100vh;
-    width: auto;
+    width: 100vw;
+    filter: brightness(0.5);
 }
 
 .pages{
@@ -1204,8 +1193,10 @@ margin-left: 30vw;
 }
 
 #obf-img1{
-    width: 100%;
-    opacity:0.5;
+    padding-left: 35%;
+    width: 30%;
+    opacity: 0.5;
+
 }
 
 .obfuscation-header{
@@ -1219,27 +1210,30 @@ margin-left: 30vw;
 
 .audio-cont{
     height: 54px;
-    width: 50%;   
+    width: 100%;   
     border: none;
     padding: 0;
     margin: 40px 20px 20px 20px;
     box-sizing: border-box;
     z-index: 100;
-    position: relative;
+    position: sticky;
+    left: 0;
+    top: 0;
     mix-blend-mode: color-burn;
-
+    transform: scale(1,3) translate(0px, 30%);
 }
+
 
 .audio-cont audio{
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     left: 50%;
-    transform: scale(2, 3);
-    width: 90%;
+    width:  95%;
     filter: blur(0.5px);
 }
 
 audio{
+    z-index: 100;
     width: 100%;
 }
 
@@ -1254,6 +1248,7 @@ audio{
     text-align: right;
 }
 
+
 #obfuscation-header, .obf-1-desc{
     mix-blend-mode: lighten;
     color: #1a1919;
@@ -1262,20 +1257,45 @@ audio{
 
 
 @media only screen and (max-width: 1200px) {
-    #obf-1-vis {
+    .obf-1-vis {
         width: 60vw !important;
+    }
+
+    .audio-cont{
+        height: 54px;
+        width: 100%;
+        position: sticky;
+        border: none;
+        padding: 0;
+        margin: 40px 20px 30% 20px;
+        box-sizing: border-box;
+        z-index: 100;
+        /* position: relative; */
+        mix-blend-mode: color-burn;
+    }
+    
+    
+    .audio-cont audio{
+        position: sticky;
+        left: 0%;
+        top: 0;
+        transform: scale(1, 3) translate(0px, 30%);
+        width: 95%;
+        filter: blur(0.5px);
+    
     }
   }
 
-#obf-1-vis img{
+.obf-1-vis img{
     width: 50%;
     height: auto;
     filter: saturate(50%);  
     padding-left: 50%;
     transform: translate(-25%, 0); 
+
 }
 
-#obf-1-vis {
+.obf-1-vis {
     mix-blend-mode: darken;
 }
 
@@ -1298,6 +1318,30 @@ audio{
     mix-blend-mode: lighten;
 }
 
-#obf-1-vis{
-    mix-blend-mode: darken;
+
+
+#load{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+    background-color: #000;
+}
+
+#load div{
+    position: relative;
+}
+
+#load video{
+    width: 100vw;
+    height:100vh;
+    position: absolute;
+}
+
+#load-txt{
+    padding: 5%;
+    font-size: 1.5em;
 }
