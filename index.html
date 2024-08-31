@@ -7,14 +7,10 @@
         <script src="openly.mjs" type="module"></script>   
     </head>
     <body id="bodyBg">
-        <div id="load">
+        <!-- <div id="load">
             <div>
                 <video src="https://dl.dropbox.com/scl/fi/5p5mp9em7bi8t1ls78nq9/obf1.mp4?rlkey=yqpq7rha0ecb3uzj5ne68esyr&st=tm4u5cmd&dl=0" autoplay='false' playsinline="" loop='true' type="video/mp4" muted="true"></video>
             </div>
-        </div>
-
-        <!-- <div id="header1" class="header">
-            <p>dwelling online, inside a stream</p>
         </div> -->
         <div id="header2" class="header">
             <p>From The River To The Sea, Palestine Will Be Free</p>
@@ -483,9 +479,7 @@
         const delay = ms => new Promise(res => setTimeout(res, ms));
 
         window.addEventListener("load", async (event) => {
-            let load = document.getElementById("load")
             <!-- await delay(25000); -->
-            load.style.display = "none";
         })
     </script>
 </html>
