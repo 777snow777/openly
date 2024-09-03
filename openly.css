@@ -1239,7 +1239,7 @@ audio{
 
 .obf-1-desc{
     width: 60vw;
-    line-height: 30%;
+    line-height: 40%;
     font-size: 0.6em;
     top: 0vh;
     z-index: 1;
@@ -1314,10 +1314,22 @@ audio{
     width: 50%;
 }
 
-#obf-vis{
+#obf-cont{
     mix-blend-mode: lighten;
 }
 
+#obf-vis-2, #obf-vis-1{
+    width: 100%;
+    mix-blend-mode: lighten;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.obf-vis img{
+    width: 40%;
+    height: auto;
+}
 
 
 #load{
