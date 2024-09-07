@@ -583,6 +583,8 @@ video::-webkit-media-controls-start-playback-button {
     flex-wrap: wrap;
     padding: 2%;
     justify-content: space-evenly;
+    background-image: url("media/fence.jpg");
+
 }
 
 #perpendicular-imgs2 img{
@@ -596,12 +598,11 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #perpendicular{
-    background-image: url("media/fence.jpg");
     position: relative;
     margin-top: 10%;
     width: 100%;
     filter: brightness(1.15);
-    mix-blend-mode: darken;
+    mix-blend-mode: difference;
 }
 
 
@@ -675,12 +676,17 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 
-/*~~~~~~~~~~~~~~~through our knuckles~~~~~~~~~~~~~~~*/
 
-#thro-our-knuckles audio{
-    mix-blend-mode: normal;
-    border: 10px solid #430000;
+#thro-our-knuckles audio::-webkit-media-controls-panel{
+    background-color:rgba(100, 78, 78, 0.862) !important;
+    mix-blend-mode: multiply;
 }
+
+#sunspots audio::-webkit-media-controls-panel{
+    background-color:rgba(100, 78, 78, 0.862) !important;
+    mix-blend-mode: multiply;
+}
+
 #thro-our-knuckles{
     height: fit-content;
     padding: 0% 5% 5% 5%;
@@ -802,22 +808,28 @@ audio::-webkit-media-controls {
 
 /*~~~~~~~~~~~~~~~sunspots and sinkholes~~~~~~~~~~~~~~~*/
 
-#sunspots, #softspot2{
-    mix-blend-mode: multiply;
-    padding: 3%;
+#sunspots{
+    mix-blend-mode: plus-lighter;
+    padding: 3% 0;
+    margin-top: 10vh;
+    position: relative;
+}
+
+#softspot2{
+    mix-blend-mode: lighter;
     margin-top: 10vh;
 }
 
 #sunspot1{
     position: relative;
-    background-color: #83557d;
-    color: rgba(196, 200, 203, 0.856);
-    padding: 1.5%;
-    font-size: 60px;
-    text-shadow: 3px 2px 3px white;
+    color: rgb(62 71 78);
+    padding: 1.5% 2%;
+    font-size: 40px;
+    text-shadow: 3px 2px 30px #878686;
     font-weight: 700;
 
 }
+
 
 #sunspot2{
     text-shadow:rgba(253, 229, 196, 0.856) 10px 0px 10px;
@@ -832,11 +844,11 @@ audio::-webkit-media-controls {
 
 #softspot2{
     display: flex;
-    width: 90vw;
+    width: 80%;
+    margin-left: 10%;
     position: relative;
     height: fit-content;
     align-items: center;
-
 }
 
 #softspot2 div{
@@ -851,6 +863,7 @@ audio::-webkit-media-controls {
 #softspot2 img{
     filter:invert(1);
     width: 100%;
+    margin-bottom: 5%;
 }
 
 #softspot{
@@ -858,6 +871,7 @@ audio::-webkit-media-controls {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    padding: 0 3%;
 }
 
 #softspot img{
@@ -1239,7 +1253,7 @@ audio{
     width: 60vw;
     line-height: 40%;
     font-size: 1rem;
-    top: 0vh;
+    top: 5vh;
     z-index: 1;
     position: relative;
     padding-left: 30%;
@@ -1265,7 +1279,7 @@ audio{
         position: sticky;
         border: none;
         padding: 0;
-        margin: 40px 0px 30% 0px;
+        margin: 40px 0px 20% 0px;
         box-sizing: border-box;
         z-index: 100;
         /* position: relative; */
@@ -1319,6 +1333,11 @@ audio{
     mix-blend-mode: lighten;
 }
 
+#obfuscation-1 audio::-webkit-media-controls-panel{
+    background-color:rgba(100, 78, 78, 0.862) !important;
+    mix-blend-mode: multiply;
+}
+
 #obf-vis-2, #obf-vis-1{
     width: 100%;
     mix-blend-mode: lighten;
@@ -1337,12 +1356,17 @@ audio{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     z-index: 100;
     opacity: 1;
     background-color: #000;
 }
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0;
+}
+
 
 #load div{
     position: relative;
@@ -1358,4 +1382,14 @@ audio{
 #load-txt{
     padding: 5%;
     font-size: 1.5em;
+}
+
+
+
+.song-holder, #header{
+    position: relative;
+    width: 101vw !important;
+    z-index: 100;
+    margin: 0 !important;
+
 }
