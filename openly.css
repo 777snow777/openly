@@ -56,7 +56,7 @@ video::-webkit-media-controls-start-playback-button {
 #bodyBg{
     background-color: rgb(182, 162, 126);
     background-blend-mode: lighten;
-    width: 100vw;
+    width: 101vw;
     height: fit-content;
     min-height: 100%;
 }
@@ -230,9 +230,6 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #stillmylove audio{
-    margin-left: 10vw;
-    width: 80vw !important;
-    max-width: 80vw;
     font-size: 3em !important;
 }
 
@@ -509,7 +506,7 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #opening-block2{
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     top: 0vh;
     z-index: 0;
@@ -542,6 +539,7 @@ video::-webkit-media-controls-start-playback-button {
     width: 40%;
     font-size: 0.8em;
     margin-top: 20%;
+    padding-right: 5%;
 }
 
 #opening-right .title{
@@ -557,10 +555,9 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #opening{
-    padding-right: 5%;
-    mix-blend-mode: lighten;
+    mix-blend-mode: difference;
     color: rgb(152, 152, 152);
-    background-color: rgb(110 0 0);
+    background-color: rgb(156 156 156 / 56%);
 }
 
 /*~~~~~~~~~~~~~~~perpendicular~~~~~~~~~~~~~~~*/
@@ -603,8 +600,7 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
     margin-top: 10%;
     width: 100%;
-    padding: 5%;
-    filter: brightness(1.45);
+    filter: brightness(1.15);
     mix-blend-mode: darken;
 }
 
@@ -613,7 +609,7 @@ video::-webkit-media-controls-start-playback-button {
 
 #everypore{
     height: fit-content;
-    width:100vw;
+    width: 100%;
     filter:contrast(1.5);
     overflow: visible;
     position: relative;
@@ -888,14 +884,14 @@ audio::-webkit-media-controls {
 #yourarmswere{
     margin-top: 10vh;
     mix-blend-mode: lighten;
-    width: 100vw;
+    width: 100%;
     font-weight: 100;
     overflow: visible;
     text-shadow: 5px 0px 5px rgb(175, 175, 175);
 }
 #arms{
     margin-top: 5vh;
-    width: 100vw;
+    width: 100%;
     height: fit-content;
     background-image: url("media/rupture.jpg");
     background-size: contain;
@@ -1092,7 +1088,7 @@ margin-left: 30vw;
     left:0;
     opacity: 0.8;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     filter: brightness(0.5);
 }
 
@@ -1214,7 +1210,7 @@ margin-left: 30vw;
     width: 100%;   
     border: none;
     padding: 0;
-    margin: 40px 20px 20px 20px;
+    margin: 40px 0px 20px 0px;
     box-sizing: border-box;
     z-index: 100;
     position: sticky;
@@ -1229,8 +1225,9 @@ margin-left: 30vw;
     width: 100%;
     /* position: absolute; */
     left: 50%;
-    width:  95%;
+    width:  100%;
     filter: blur(0.5px);
+    z-index: 100;
 }
 
 audio{
@@ -1241,7 +1238,7 @@ audio{
 .obf-1-desc{
     width: 60vw;
     line-height: 40%;
-    font-size: 0.6em;
+    font-size: 1rem;
     top: 0vh;
     z-index: 1;
     position: relative;
@@ -1268,7 +1265,7 @@ audio{
         position: sticky;
         border: none;
         padding: 0;
-        margin: 40px 20px 30% 20px;
+        margin: 40px 0px 30% 0px;
         box-sizing: border-box;
         z-index: 100;
         /* position: relative; */
@@ -1280,7 +1277,8 @@ audio{
         position: sticky;
         left: 0%;
         top: 0;
-        width: 95%;
+        width: 100%;
+        z-index: 100;
         filter: blur(0.5px);
     
     }
