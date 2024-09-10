@@ -614,8 +614,8 @@ video::-webkit-media-controls-start-playback-button {
     filter: brightness(1.5);
     overflow: visible;
     position: relative;
-    mix-blend-mode: multiply;
-    text-shadow: 0px 0px 1px rgb(54 3 3);
+    mix-blend-mode: lighten;
+    text-shadow: 2px -2px 5px rgb(99, 56, 56);
 }
 
 
@@ -644,12 +644,18 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #pore2{
-    position: absolute;
-    width: 60%;
-    mix-blend-mode: lighten;
+    position: sticky;
+    width: 100%;
+    mix-blend-mode: plus-lighter;
+    filter: brightness(0.75);
     left: 10%;
-    top: 25%;
+    top: 0;
 }
+
+#pore2 img{
+    width: 100%;
+}
+
 #opening-block5{
     position: fixed;
     width: 70vw;
@@ -663,17 +669,6 @@ video::-webkit-media-controls-start-playback-button {
     width: 100%;
 }
 
-#pore1{
-    position: sticky;
-    width: 100%;
-    left: 0;
-    top: 0;
-    mix-blend-mode: lighten;
-}
-#pore1 img, #pore2 img{
-    width: 100%;
-    height: auto;
-}
 
 
 
@@ -904,21 +899,7 @@ audio::-webkit-media-controls {
     filter: invert(.8);
     text-shadow: 5px 0px 5px rgb(175, 175, 175);
 }
-#arms{
-    margin-top: 5vh;
-    width: 100%;
-    height: fit-content;
-    background-image: url("media/rupture.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
-#arms img{
-    mix-blend-mode: color-dodge;
-    height: auto;
-    width: 100%;
-    margin-top: 30vh;
-}
 
 #window img{
     width: 80%;
