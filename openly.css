@@ -13,7 +13,7 @@
         color: rgb(184, 164, 127) !important;
     }
 
-    #thro-our-knuckles{
+    #throughourknuckles{
         font-size: 2em;
     }
     #bodyBg{
@@ -128,14 +128,22 @@ video::-webkit-media-controls-start-playback-button {
 
 
 #header1{
-    top: 0;
+    top: 0vh;
+    height: 5vh;
+    font-size: 0.8em !important;
+    font-weight: 100 !important;
     filter: invert(0.85);
-    height: 4vh;
-    min-height: 100px;
-    font-weight: 800;
-    font-size: 3.5rem;
     box-shadow: 0 5px 60px #05054f;
+    display: flex;
+    justify-content: space-between;
 }
+
+#header1 a{
+    color: rgb(13, 19, 56);
+    text-decoration: none; 
+    text-shadow: 0px 10px 5px black;
+}
+
 
 .header{
     text-shadow: 0 0 10px rgb(82, 79, 72);
@@ -160,6 +168,7 @@ video::-webkit-media-controls-start-playback-button {
     mix-blend-mode: color-burn;
     font-weight: 900;
 }
+
 
 #enter-openly, #header1{
     color: rgb(0 0 0 / 70%) !important;
@@ -212,8 +221,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #stillmylove img{
-    width: 100%;
-    height: auto;
+    width: 50%;
+    margin: 0 25%;
 }
 
 #stillmylove h1{
@@ -415,19 +424,9 @@ video::-webkit-media-controls-start-playback-button {
     position: relative;
 }
 
-
-#openly-intro{
-    z-index: 100;
-    width: 30vw;
-    min-width: 300px;
-    background-image: url("media/openly.png");
-    height: auto;
-    position: fixed;
-    top: 10vh;
-    right:5vw;;
-    mix-blend-mode: soft-light;
-    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 0.541) inset;
-
+#intro2{
+    color: black;
+    padding: 0 10%;
 }
 
 .bgVideo{
@@ -477,7 +476,7 @@ video::-webkit-media-controls-start-playback-button {
 
 
 .title{
-    color: rgb(206, 0, 0) !important;
+    color: rgb(86 59 59 / 18%) !important;
     position: relative;
     font-weight: 400;
     font-size: 5.5rem;
@@ -581,7 +580,6 @@ video::-webkit-media-controls-start-playback-button {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    padding: 2%;
     justify-content: space-evenly;
     background-image: url("media/fence.jpg");
 
@@ -608,7 +606,7 @@ video::-webkit-media-controls-start-playback-button {
 
 /*~~~~~~~~~~~~~~~with every pore of my skin~~~~~~~~~~~~~~~*/
 
-#everypore{
+#tomyskin{
     height: fit-content;
     width: 100%;
     filter: brightness(1.5);
@@ -672,24 +670,23 @@ video::-webkit-media-controls-start-playback-button {
 
 
 
-#thro-our-knuckles audio::-webkit-media-controls-panel{
-    background-color:rgba(100, 78, 78, 0.862) !important;
+#throughourknuckles audio::-webkit-media-controls-panel{
+    background-color:rgba(205, 211, 236, 0.862) !important;
     mix-blend-mode: multiply;
 }
 
 #sunspots audio::-webkit-media-controls-panel{
-    background-color:rgba(100, 78, 78, 0.862) !important;
+    background-color:rgba(205, 211, 236, 0.862) !important;
     mix-blend-mode: multiply;
 }
 
-#thro-our-knuckles{
+#throughourknuckles{
     height: fit-content;
-    padding: 0% 5% 5% 5%;
     position: relative;
     mix-blend-mode: darken;
     font-size: 3em;
     font-weight: 600;
-    color: #000000;
+    color: #000000 !important;
     text-shadow: 0 0 50px rgb(255, 255, 255);
     text-align: center;
 }
@@ -766,7 +763,7 @@ audio::-webkit-media-controls {
 }
 
 
-#intro2 {
+#openly-intro {
     z-index: 100;
     top: 0;
     left: 50%;
@@ -1155,14 +1152,17 @@ margin-left: 30vw;
     font-size: 1.1em;
     padding: 2%;
     display: flex;
+    justify-content: center;
 }
 #sf-poem p{
     padding: 1%;
 }
 
 #sf-poem img{
-    width: 40%;
+    width: 50%;
+    filter: grayscale(1);
     height: auto;
+    opacity: 0.7;
 }
 
 #tohold p{
