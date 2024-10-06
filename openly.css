@@ -126,6 +126,9 @@ video::-webkit-media-controls-start-playback-button {
     font-weight: 200;;
 }
 
+#obf-vis-container{
+    position: relative;
+}
 
 #header1{
     top: 0vh;
@@ -213,6 +216,7 @@ video::-webkit-media-controls-start-playback-button {
 
 #stillmylove{
     padding: 2% 0;
+    mix-blend-mode: difference;
 }
 #stillness img{
     width: 48%;
@@ -223,6 +227,10 @@ video::-webkit-media-controls-start-playback-button {
 #stillmylove img{
     width: 50%;
     margin: 0 25%;
+    opacity: 0.5;
+}
+#stillmylove img{
+    position: absolute;
 }
 
 #stillmylove h1{
@@ -601,7 +609,7 @@ video::-webkit-media-controls-start-playback-button {
     margin-top: 10%;
     width: 100%;
     filter: brightness(1.15);
-    mix-blend-mode: difference;
+    mix-blend-mode: exclusion;
 }
 
 
@@ -613,8 +621,8 @@ video::-webkit-media-controls-start-playback-button {
     filter: brightness(1.5);
     overflow: visible;
     position: relative;
-    mix-blend-mode: lighten;
-    text-shadow: 2px -2px 5px rgb(99, 56, 56);
+    mix-blend-mode: hard-light;
+    text-shadow: 2px -2px 5px rgb(0, 0, 0);
 }
 
 
@@ -643,10 +651,8 @@ video::-webkit-media-controls-start-playback-button {
 }
 
 #pore2{
-    position: sticky;
     width: 100%;
-    mix-blend-mode: plus-lighter;
-    filter: brightness(0.75);
+    filter: brightness(0.5) ;
     left: 10%;
     top: 0;
 }
@@ -1325,14 +1331,29 @@ audio{
     mix-blend-mode: lighten;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:center;
+}
+
+#snowfairy1 p{
+    padding: 1%;
+}
+
+#stillmylove-vis{
+    position: relative;
+    height: 100vh;
+
 }
 
 .obf-vis img{
-    width: 40%;
+    width: 52%;
     height: auto;
+    opacity: 0.8;
 }
 
+.obf-vis{
+    position: absolute;
+    top: 0;
+}
 
 #load{
     position: fixed;
